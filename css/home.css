@@ -1,0 +1,430 @@
+*{
+  border: 0px;
+  padding: 0px;
+  box-sizing:border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.textColor1{
+  color: #fffd;
+}
+.textColor2{
+  color: #0d6efd;
+}
+.overlayy{
+  background-color: #0078ff;
+}
+body{
+    background-color:#f5f5f5;
+}
+.extra-margin{
+  padding-top: 80px;
+}
+/* ------------------------------------- */
+
+/* -----------------nav 2-------------------- */
+.list-Top{
+  z-index: 999;
+}
+.bg-blackTransparent{
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.appear{
+  display: block ;
+}
+.menu ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    /* color: #f5f5f5; */
+  }
+  .aStyle:hover, .aStyle:visited, .aStyle:focus, .aStyle:active ,
+  .logoStyle:hover, .logoStyle:visited, .logoStyle:focus, .logoStyle:active  {
+    color: #f5f5f5;
+  }
+  .logoStyle{
+    color: #f5f5f5;
+    display: inline-block;
+    text-decoration: none;
+    line-height:10px;
+  }
+  .aStyle{
+    position: relative;
+  }
+  .aStyle::after{
+    content: '';
+    width:0%;
+    height: 3px;
+    background-color: #f5f5f5;
+    position: absolute;
+    top:100%;
+    left: 0px;
+    right: 0px;
+    transition: all .5s;
+  }
+  .aStyle:focus::after , .aStyle:hover::after{
+    width:100%;
+  }
+  .btn-edit{
+    color: transparent;
+  }
+.list1{
+  z-index: 999;
+}
+.aStyle1, .aStyle1 a i , .aStyle1 a{
+  color: #000c;
+  transition: all .5s;
+}
+.aStyle1:hover , .aStyle1:hover a , .aStyle1:hover a i{
+  color:#0062d3 ;
+}
+/* -----------------nav 2-------------------- */
+
+/* ---------home---------- */
+
+.home{
+  background-image: url(../images/hero-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.z-index-2{
+  z-index: 2;
+}
+.fs-large{
+  font-size: 4rem;
+}
+.fs-title{
+  font-size: 3rem;
+}
+.w-85{
+  width: 85%;
+}
+.w-90{
+  width: 90%;
+}
+.progress {
+  --bs-progress-bg: #cde1f8;
+  margin: auto;
+  border-radius: 0px;
+  padding: 0;
+}
+.aboutTitle::before{
+  content: '';
+  position: absolute;
+  top: 120%;
+  left: 0%;
+  width: 100px;
+  height: 3px;
+  background-color: #0d6efd;
+}
+
+/* -------------Services--------------------- */
+
+.Coloredunderline{
+  width: 50px;
+  height: 5px;
+  background-color: #0d6efd;
+}
+.logo{
+  font-size: 40px;
+  transition: all .5s;
+}
+.logoContainer{
+  width: 105px;
+  height: 105px;
+  border:5px solid #0d6efd;
+  transition: all .5s;
+}
+.logoContainer:hover{
+  border:5px solid #86b6ff;
+  background-color: #0d6efd;
+}
+.logoContainer:hover .logo{
+  color:#f5f5f5;
+}
+
+/* ----------Counter--------------- */
+.logoContainer1{
+  width: 70px;
+  height: 70px;
+  border:10px solid #f5f5f5b3;
+}
+.logo1{
+  font-size: 25px;
+}
+#counter{
+  background-image: url(../images/counters-bg.jpg);
+  background-size:cover ;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* -----------portfolio----------- */
+
+.picc{
+position: relative;
+overflow: hidden;
+cursor: pointer;
+}
+.picc img  {
+  float: left;
+  width: 100%;
+  transform: scale(1);
+  transition: all .5s;
+}
+.picc:hover img {
+  transform: scale(1.3);
+}
+
+.smFont{
+  font-size: .8rem;
+}
+
+.logoContainer3{
+  width: 45px;
+  height: 45px;
+  border:3px solid #0d6efd;
+}
+.logo2{
+  font-size: 25px;
+  color: #0d6efd;
+}
+.my-shadow{
+  box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+
+/* -------slider---------- */
+
+.carousel-dark .carousel-indicators [data-bs-target]{
+  background-color: white;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+#slider{
+  background-image: url(../images/overlay-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* --------Blog---------- */
+
+.pic2{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  }
+  .pic2 img  {
+    float: left;
+    width: 100%;
+    transform: scale(1);
+    transition: all .5s;
+  }
+
+  .blog-border{
+    border: 1px solid rgba(58, 58, 45, 0.18);
+  }
+
+  .sm-img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+
+  .blog-border-top{
+    border-top: 1px solid rgba(58, 58, 45, 0.18);
+  }
+  .emptyDiv, .emptyDiv1{
+    position: relative;
+    height: 30px;
+    /* background-color: aqua; */
+  }
+  .emptyDiv::before{
+    content: 'Travel';
+  }
+  .emptyDiv1::before{
+    content: 'WEB DESIGN';
+  }
+  .emptyDiv::before , .emptyDiv1::before{
+    background-color: #0078ff;
+    color: #f5f5f5;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: small;
+    padding: 5px 20px;
+  }
+
+  .blog-hover{
+    color: black;
+    cursor:pointer;
+    transition: all .5s;
+  }
+  .blog-hover:hover{
+    color: #0078ff !important;
+  }
+
+
+  /* -----contact us-------- */
+  .py-large{
+    margin-top: 50px ;
+  }
+  #contactus{
+    background-image: url(../images/overlay-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+  }
+  .socialContainer{
+    width: 50px;
+    height: 50px;
+    border:2px solid #0078ff;
+    transition: all .5s;
+  }
+
+  .logo1{
+    transition: all .5s;
+  }
+
+  .socialContainer:hover{
+    border:5px solid #86b6ff;
+    background-color: #0d6efd;
+  }
+  .socialContainer:hover .logo1{
+    color:#f5f5f5;
+  }
+  .btnSend{
+    border-radius: 50px;
+    padding:10px 24px ;
+    background-color: #0d6efd;
+    border:5px solid transparent;
+    transition: all .5s;
+  }
+  .btnSend:hover{
+    background-color: #2d7ffa;
+    border:5px solid #86b6ff;
+  }
+/* ---------Footer----------- */
+
+.footer{
+  background-color: #0062d3;
+}
+
+
+
+@media screen and (min-width: 992px) {
+  .appear{
+    display: block !important ;
+  }
+  .subList1{
+    display: block !important ;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    position:absolute !important;
+    transition: all .5s ;
+  }
+  .hoverMenu:hover .subList1{
+    
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .subList2{
+    display: block !important ;
+    visibility: hidden;
+    position:absolute !important;
+    opacity: 0;
+    left: 100%;
+    right: auto;
+    width: 200px !important ;
+    text-align: center; 
+    transition: all .5s;
+  }
+  .deepMenu:hover .subList2{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 992px) {
+
+/* -------Nav 2-------- */
+
+.subList1{
+  display: block;
+  position: relative ;
+}
+.subList2{
+  display: block;
+}
+
+.list1{
+  background-color: transparent !important;
+}
+.aStyle1 {
+  color: #f5f5f5 !important;
+}
+
+.sm-width{
+  width: 100%;
+}
+.menu ul li{
+  margin-bottom: 10px;
+}
+
+.menu{
+  /* background-color: #0062d3; */
+  text-align: center;
+}
+.menu ul{
+  /* background-color: aquamarine; */
+  flex-direction: column ;
+  width: 100%;
+}
+.btn-edit i{
+  color: white;
+  font-size: 25px;
+}
+.aStyle:focus::after , .aStyle:hover::after{
+  width:0%;
+}
+.ForHover , .ForHover a {
+  transition: all .5s;
+}
+.ForHover:hover {
+  background-color: rgba(128, 128, 128, 0.319) ;
+}
+.ForHover:hover a{
+  color: #5ba8ff !important;
+}
+
+/* -------Nav 2-------- */
+
+}
+
+@media screen and (max-width: 1024px) {
+  #slider{
+    background-attachment: scroll ;
+  }
+  #contactus{
+    background-attachment:scroll;
+  }
+  #counter{
+    background-attachment: scroll;
+  }
+}
+@media screen and (max-width: 1400px) {
+
+/* -------Nav 2-------- */
+.subList2{
+  left: auto;
+  right: 100%;
+}
+/* -------Nav 2-------- */
+
+}
